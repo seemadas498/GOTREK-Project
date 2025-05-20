@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>Home Page</title>
+
+    <!-- font cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="navbar-brand" href="#"
+              ><img src="./images/logo (4).png" alt="Logo"
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center ms-lg-7"
+            id="navMenu"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <div class="d-flex align-items-center ms-4">
+              <!-- Search Input with Icon -->
+              <div class="position-relative search-wrapper">
+                <i class="bi bi-search search-icon"></i>
+                <input
+                  type="text"
+                  class="form-control search-input ps-5"
+                  placeholder="Search your bike"
+                />
+              </div>
+
+              <!-- Menu Button -->
+              <div class="icon-button">
+                <a href="#"><img src="./images/menu.png" alt="" /></a>
+              </div>
+
+              <!-- Cart Icon with Badge -->
+              <div class="cart-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-badge">5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Banner  Part-->
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-md-6">
+              <div class="hero-content">
+                <p class="text-white">Power Your Path with Electricity</p>
+                <h1 class="hero-title">
+                  <span class="highlight">GOTREK</span> new series bike
+                </h1>
+                <h2 class="hero-subtitle">Ride the Future. Charge</h2>
+                <h3 class="hero-subtitle">the Journey.</h3>
+                <p class="text-white mt-3 para">
+                  a revolutionary step forward in electric biking. Designed with
+                  cutting-edge technology and sleek aesthetics, this new series
+                  offers unparalleled performance, comfort, and sustainability
+                </p>
+                <a href="#" class="btn btn-custom mt-1"
+                  >FIND YOUR BIKE <i class="bi bi-arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Image Column -->
+            <div class="col-md-6 position-relative">
+              <img
+                src="./images/cycle.png"
+                alt="GOTREK Bike"
+                class="bike-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#bannerCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#bannerCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+
+          <!-- Carousel Inner with Cards -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row justify-content-center gap-3">
+                  <div class="col-md-3 text-center border rounded p-3">
+                    <h6 class="fw-bold">25% OFFER ON<br />HIKING BIKES</h6>
+                    <img
+                      src="https://via.placeholder.com/150x100"
+                      class="img-fluid my-2"
+                      alt="Bike"
+                    />
+                    <a href="#" class="btn btn-dark mt-2">View Collection</a>
+                  </div>
+                  <div class="col-md-3 text-center border rounded p-3">
+                    <h6 class="fw-bold">OFFER IN<br />ACCESSORIES</h6>
+                    <img
+                      src="https://via.placeholder.com/150x100"
+                      class="img-fluid my-2"
+                      alt="Accessories"
+                    />
+                    <a href="#" class="btn btn-dark mt-2">View Collection</a>
+                  </div>
+                  <div class="col-md-3 text-center border rounded p-3">
+                    <h6 class="fw-bold">CLASSIC<br />BIKE COLLECTIONS</h6>
+                    <img
+                      src="https://via.placeholder.com/150x100"
+                      class="img-fluid my-2"
+                      alt="Classic Bikes"
+                    />
+                    <a href="#" class="btn btn-dark mt-2">View Collection</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row justify-content-center gap-3">
+                  <div class="col-md-3 text-center border rounded p-3">
+                    <h6 class="fw-bold">NEW OFFERS<br />ON E-BIKES</h6>
+                    <img
+                      src="https://via.placeholder.com/150x100"
+                      class="img-fluid my-2"
+                      alt="E-Bike"
+                    />
+                    <a href="#" class="btn btn-dark mt-2">View Collection</a>
+                  </div>
+                  <div class="col-md-3 text-center border rounded p-3">
+                    <h6 class="fw-bold">URBAN<br />BIKE RANGE</h6>
+                    <img
+                      src="https://via.placeholder.com/150x100"
+                      class="img-fluid my-2"
+                      alt="Urban Bike"
+                    />
+                    <a href="#" class="btn btn-dark mt-2">View Collection</a>
+                  </div>
+                  <div class="col-md-3 text-center border rounded p-3">
+                    <h6 class="fw-bold">DISCOUNT ON<br />MOUNTAIN BIKES</h6>
+                    <img
+                      src="https://via.placeholder.com/150x100"
+                      class="img-fluid my-2"
+                      alt="Mountain Bike"
+                    />
+                    <a href="#" class="btn btn-dark mt-2">View Collection</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Part -->
+      <section class="why-section bg-dark text-white section_padding">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <!-- Left: Combined Image -->
+            <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+              <img
+                src="./images/gridcy.png"
+                alt="GOTREK Bike"
+                class="grouped-bike-img"
+              />
+            </div>
+
+            <!-- Right: Text Content -->
+            <div class="col-md-6">
+              <h3 class="mb-3">Why GOTREK?</h3>
+              <p>
+                GOTREK brings you eco-friendly, high-performance eD bikes for a
+                smooth and sustainable ride. With advanced battery technology,
+                our bikes offer long-lasting power and quick charging— perfect
+                for city commutes and open-road adventures. Ride the future with
+                us!
+              </p>
+              <a href="#" class="btn btn-know mt-3">Know more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Part -->
+      <section class="feature py-5">
+        <div class="container">
+          <h4 class="text-center fw-bold mb-4">Featured Collections</h4>
+
+          <div class="row g-3">
+            <!-- Column 1 - Tall card on the left -->
+            <div class="col-md-4 col-12">
+              <div
+                class="collection-card card-tall"
+                style="background-image: url('./images/feature1.png')"
+              >
+                <div class="overlay">
+                  <h6>2025</h6>
+                  <p class="mb-0">Future Model</p>
+                </div>
+                <div class="more">More ></div>
+              </div>
+            </div>
+
+            <!-- Column 2 - 4 small cards in 2x2 grid -->
+            <div class="col-md-8 col-12">
+              <div class="row g-3">
+                <!-- First row of 2 small cards -->
+                <div class="col-md-6 col-12">
+                  <div
+                    class="collection-card card-short"
+                    style="background-image: url('./images/feature2.png')"
+                  >
+                    <div class="overlay">
+                      <h6>-50% on</h6>
+                      <p class="mb-0">headco</p>
+                    </div>
+                    <div class="more">More ></div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div
+                    class="collection-card card-short"
+                    style="background-image: url('./images/feature3.png')"
+                  >
+                    <div class="overlay">
+                      <h6>New 2025</h6>
+                      <p class="mb-0">Trek Collection</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Second row of 2 small cards -->
+                <div class="col-md-6 col-12">
+                  <div
+                    class="collection-card card-short"
+                    style="background-image: url('./images/feature4.png')"
+                  >
+                    <div class="overlay">
+                      <h6>20% off</h6>
+                      <p class="mb-0">Black Ride</p>
+                    </div>
+                    <div class="more">More ></div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div
+                    class="collection-card card-short"
+                    style="background-image: url('./images/feature5.png')"
+                  >
+                    <div class="overlay">
+                      <h6>GOTREK</h6>
+                      <p class="mb-0">Signature Ride</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a hre="#" class="btn view-btn">View more</a>
+        </div>
+      </section>
+      <!-- Miss Out -->
+      <section class="miss">
+        <div class="container">
+          <div class="row">
+            <!-- Left side -->
+            <div
+              class="col-md-6 left-side d-flex flex-column justify-content-center"
+            >
+              <p>Don't Miss Out</p>
+              <h5><strong>SUMMER SALE IS COMING</strong></h5>
+              <div class="countdown d-flex gap-3 mt-3">
+                <div>05<br /><small>Day</small></div>
+                <div>:</div>
+                <div>14<br /><small>Hour</small></div>
+                <div>:</div>
+                <div>20<br /><small>Min</small></div>
+                <div>:</div>
+                <div>34<br /><small>Sec</small></div>
+              </div>
+              <div>
+                <a href="#" class="btn-look" type="button">TAKE A LOOK</a>
+              </div>
+            </div>
+
+            <!-- Right side -->
+            <div
+              class="col-md-6 right-side d-flex align-items-center justify-content-center"
+            >
+              <img src="./images/timecycle.png" alt="Bike Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Moments Part -->
+      <section class="bg-dark text-white py-5">
+        <div class="container text-center mb-4">
+          <h4 class="fw-bold text-center mb-5">Share your moment with us</h4>
+
+          <div
+            class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-5"
+          >
+            <!-- Image -->
+            <div>
+              <img
+                src="./images/borcycle.png"
+                alt="Bike Testimonial"
+                class="img-fluid"
+                style="max-width: 400px"
+              />
+            </div>
+
+            <!-- Testimonial Content -->
+            <div
+              class="text-start position-relative testimonial-box"
+              style="max-width: 500px"
+            >
+              <div class="text-warning fs-5 mb-2">★★★★★</div>
+              <p class="mb-3">
+                Switched to an GOTREK 450X, and it's a game-changer! Smooth,
+                silent ride with instant pickup. No fuel costs, low maintenance,
+                and packed with smart features. Battery lasts 120 km, but
+                charging stations are still limited. Great for city rides, and
+                trekking but long trips need planning. Worth every penny!
+              </p>
+              <p class="fw-bold mb-0">John Marks</p>
+              <p class="">GOTREK CUSTOMER SINCE 2023</p>
+
+              <!-- Carousel Dots -->
+              <div class="carousel-dots position-absolute">
+                <span class="dot bg-light rounded-circle"></span>
+                <span class="dot bg-light opacity-50 rounded-circle"></span>
+                <span class="dot bg-light opacity-50 rounded-circle"></span>
+              </div>
+              <!-- Arrow in circle -->
+              <div class="arrow-circle position-absolute">
+                <div
+                  class="circle bg-white rounded-circle d-flex align-items-center justify-content-center"
+                >
+                  <i class="fas fa-arrow-right text-dark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Newsletter Column -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Newsletter</h5>
+            <p class="newsletter-text">
+              Signup for our newsletter to stay up to date on
+            </p>
+            <div class="subscribe-wrapper">
+              <input
+                type="email"
+                class="email-input"
+                placeholder="Email Address"
+              />
+              <a class="btn-subscribe">Subscribe</a>
+            </div>
+            <!-- Social icon -->
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- Information Column -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Information</h5>
+            <ul>
+              <li>Store Information</li>
+              <li>About Store</li>
+              <li>Latest Products</li>
+              <li>New Discounts</li>
+              <li>Sale Products</li>
+            </ul>
+          </div>
+
+          <!-- Help Column -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Help</h5>
+            <ul>
+              <li>Shipping & Returns</li>
+              <li>Track Order</li>
+              <li>FAQ</li>
+              <li>Products Return</li>
+              <li>Checkout</li>
+            </ul>
+          </div>
+
+          <!-- About Column -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>About</h5>
+            <ul>
+              <li>Articles</li>
+              <li>Stockstts</li>
+              <li>Contact</li>
+              <li>Shop Locator</li>
+            </ul>
+          </div>
+
+          <!-- GOTREK Column -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="gotrek-column">
+              <h5>GOTREK</h5>
+              <p class="footer-about">
+                We create innovative electric cycles that make eco-friendly
+                travel easy, fun, and affordable.
+              </p>
+              <a href="https://www.gotrek.com" class="gotrek-website"
+                >www.gotrek.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Links -->
+        <div class="footer-bottom mt-4 text-center">
+          <div class="footer-bottom-links">
+            <a href="#">Pittway Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Sales and Refunds</a>
+            <a href="#">Legal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS & Popper.js (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

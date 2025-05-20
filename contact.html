@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>ContactUs Page</title>
+
+    <!-- font cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="navbar-brand" href="#"
+              ><img src="./images/logo (4).png" alt="Logo"
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center ms-lg-5"
+            id="navMenu"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <div class="d-flex align-items-center ms-4">
+              <!-- Search Input with Icon -->
+              <div class="position-relative search-wrapper">
+                <i class="bi bi-search search-icon"></i>
+                <input
+                  type="text"
+                  class="form-control search-input ps-5"
+                  placeholder="Search your bike"
+                />
+              </div>
+
+              <!-- Menu Button -->
+              <div class="icon-button">
+                <a href="#"><img src="./images/menu.png" alt="" /></a>
+              </div>
+
+              <!-- Cart Icon with Badge -->
+              <div class="cart-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-badge">5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Get in Touch Section -->
+      <section class="contact-hero">
+        <!-- Background Wave Decoration - will cover right side -->
+        <div class="hero-bg-decor"></div>
+
+        <div class="container">
+          <div class="hero-content">
+            <!-- Left Content - Text -->
+            <div class="text-content text-white">
+              <h1 class="display-4 fw-bold">GET IN<br />TOUCH</h1>
+              <p class="my-4">
+                Have questions about our electric bikes? We're here to help!
+                Whether you're looking for the perfect e-bike, need assistance
+                with your order, or just want to learn more about our
+                technology, our team is ready to assist you. Reach out via
+                phone, email, or visit our store. Let's ride into the future
+                together!
+              </p>
+              <div class="d-flex gap-3 fs-4">
+                <a href="#"><i class="fab fa-facebook text-white"></i></a>
+                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                <a href="#"><i class="fab fa-linkedin text-white"></i></a>
+                <a href="#"><i class="fab fa-twitter text-white"></i></a>
+              </div>
+            </div>
+
+            <!-- Right Content - Image -->
+            <div class="image-grid">
+              <img src="./images/girlbike.png" alt="Girl with bike" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Help center-->
+      <section class="help">
+        <div class="container contact-section">
+          <div class="row g-4">
+            <!-- Left Side -->
+            <div class="col-md-6 left-side">
+              <p class="text-muted">/ get in touch /</p>
+              <h4>
+                We are always ready<br />to help you and<br />answer your<br />questions
+              </h4>
+              <p>Connect. Relax. Explore. We're Here for You!</p>
+
+              <div class="row mt-4">
+                <div class="col-6">
+                  <h6><strong>Help center</strong></h6>
+                  <p>8000235482<br />+91 12300 346 2975</p>
+                </div>
+                <div class="col-6">
+                  <h6><strong>Our Location</strong></h6>
+                  <p>
+                    123 Maple Avenue, Austin, TX 78701,<br />
+                    Society: Travis Latitude/Longitude:<br />
+                    30.2672° N, 97.7431° W
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <p><strong>Email</strong><br />example123@gmail.com</p>
+                <p><strong>Social network</strong></p>
+                <div class="social-icons">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="contact-form-box">
+              <h4 class="text-white mb-2">GET IN TOUCH</h4>
+              <p class="text-white-50 mb-4 small">
+                There are many variations of passages of Lorem Ipsum available
+              </p>
+
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Customer Service"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Email adress</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your@email.com"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Attachment</label>
+                  <div class="attachment-group">
+                    <input type="file" class="form-control" />
+                    <button class="attachment-btn" type="button">
+                      <i class="fas fa-paperclip"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    rows="3"
+                    placeholder="How can we help?"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Map Part -->
+      <section class="map">
+        <div class="container">
+          <div class="map-section">
+            <!-- Orange border behind -->
+            <div class="map-border"></div>
+
+            <!-- Overlapping Map -->
+            <div class="map-iframe">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.503554666664!2d-97.71865032535811!3d30.279723207386603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5ea462e0993%3A0x51d5672e621501a6!2sMaple%20Ave%2C%20Austin%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1747576924144!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap JS & Popper.js (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

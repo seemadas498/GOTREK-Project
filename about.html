@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>About Page</title>
+
+    <!-- font cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/about.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="navbar-brand" href="#"
+              ><img src="./images/logo (4).png" alt="Logo"
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center ms-lg-5"
+            id="navMenu"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <div class="d-flex align-items-center ms-4">
+              <!-- Search Input with Icon -->
+              <div class="position-relative search-wrapper">
+                <i class="bi bi-search search-icon"></i>
+                <input
+                  type="text"
+                  class="form-control search-input ps-5"
+                  placeholder="Search your bike"
+                />
+              </div>
+
+              <!-- Menu Button -->
+              <div class="icon-button">
+                <a href="#"><img src="./images/menu.png" alt="" /></a>
+              </div>
+
+              <!-- Cart Icon with Badge -->
+              <div class="cart-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-badge">5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- About main Part -->
+      <section class="about-section">
+        <!-- Text Overlay -->
+        <div class="about-overlay">
+          <p>Driving the Future, Electrifying the World!</p>
+          <h1>ABOUT US</h1>
+        </div>
+      </section>
+      <!-- Our Story -->
+      <section class="storyPart text-white">
+        <!-- Main Content (Above background) -->
+        <div class="container position-relative" style="z-index: 2">
+          <div class="row align-items-center g-5">
+            <!-- Left Image (Cycle) -->
+            <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+              <div class="pt-5">
+                <img
+                  src="./images/BIKE.png"
+                  alt="Electric Bike"
+                  class="img-fluid"
+                  style="max-width: 100%; height: auto"
+                />
+              </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-lg-6 content-up">
+              <div class="story-content">
+                <h2 class="mb-4">OUR STORY</h2>
+                <p class="mb-4">
+                  we believe that the future of mobility is electric. Our
+                  journey began with a simple yet powerful vision—to create a
+                  world where transportation is not only efficient but also
+                  sustainable. As passionate riders and innovators, we saw the
+                  need for a smarter, eco-friendly alternative to traditional
+                  fuel-powered bikes.
+                </p>
+                <a href="#" class="btn btn-find">FIND YOUR BIKE</a>
+              </div>
+              <!-- Features -->
+              <div class="d-grid gap-3 featurePart">
+                <div
+                  class="d-flex align-items-center px-3 py-2 box-shadow"
+                  style="background-color: #2d2823"
+                >
+                  <span class=""
+                    ><img
+                      src="./images/warren.png"
+                      alt="warlogo"
+                      class="feature-icon"
+                  /></span>
+                  <span class="ms-3">Lifetime Warranty</span>
+                </div>
+                <div
+                  class="d-flex align-items-center px-3 py-2 box-shadow"
+                  style="background-color: #443e38"
+                >
+                  <span class=""
+                    ><img
+                      src="./images/carwarrn.png"
+                      alt="delilogo"
+                      class="feature-icon"
+                  /></span>
+                  <span class="ms-3">PAN India Delivery</span>
+                </div>
+                <div
+                  class="d-flex align-items-center px-3 py-2 box-shadow"
+                  style="background-color: #5d544d"
+                >
+                  <span class=""
+                    ><img
+                      src="./images/time.png"
+                      alt="timelogo"
+                      class="feature-icon"
+                  /></span>
+                  <span class="ms-3">72-Hours Resolution</span>
+                </div>
+                <div
+                  class="d-flex align-items-center px-3 py-2 box-shadow"
+                  style="background-color: #746b64"
+                >
+                  <span class=""
+                    ><img
+                      src="./images/set.png"
+                      alt="setlogo"
+                      class="feature-icon"
+                  /></span>
+                  <span class="ms-3">Easy Maintenance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- OUR GALLARY -->
+      <section class="gallery-section py-5 text-white">
+        <div class="container">
+          <h3 class="text-center mb-4">OUR GALLERY</h3>
+
+          <div class="row g-3">
+            <!-- Row 1 -->
+            <div class="col-md-6">
+              <img
+                src="./images/galOne.png"
+                class="img-fluid w-100 object-fit-cover"
+                alt="Gallery 1"
+              />
+            </div>
+            <div class="col-md-3">
+              <img
+                src="./images/galTwo.png"
+                class="img-fluid w-100 object-fit-cover small-img"
+                alt="Gallery 2"
+              />
+            </div>
+            <div class="col-md-3">
+              <img
+                src="./images/galThree.png"
+                class="img-fluid w-100 object-fit-cover small-img"
+                alt="Gallery 3"
+              />
+            </div>
+
+            <!-- Row 2 -->
+            <div class="col-md-3">
+              <img
+                src="./images/galFour.png"
+                class="img-fluid w-100 object-fit-cover small-img"
+                alt="Gallery 4"
+              />
+            </div>
+            <div class="col-md-3">
+              <img
+                src="./images/galFive.png"
+                class="img-fluid w-100 object-fit-cover small-img"
+                alt="Gallery 5"
+              />
+            </div>
+            <div class="col-md-6 position-relative">
+              <img
+                src="./images/galSix.png"
+                class="img-fluid w-100 object-fit-cover"
+                alt="Gallery 6"
+              />
+              <div class="overlay-text position-absolute">
+                <span>100 + <br />More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NEW ARTICLE -->
+      <section class="py-5 article">
+        <div class="container-fluid">
+          <h2 class="text-center text-white fw-bold mb-5">NEW ARTICLE</h2>
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="overflow-hidden">
+                <img
+                  src="./images/article1.png"
+                  class="w-100"
+                  alt="Article Image 1"
+                  style="height: 250px; object-fit: cover"
+                />
+              </div>
+              <div class="p-2 article-card">
+                <div>
+                  <small>22-5-2025</small>
+                </div>
+                <div>
+                  <p class="mb-0 para-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                    <a href="#" class="read-more">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="overflow-hidden">
+                <img
+                  src="./images/article2.png"
+                  class="w-100"
+                  alt="Article Image 2"
+                  style="height: 250px; object-fit: cover"
+                />
+              </div>
+              <div class="p-2 article-card">
+                <div>
+                  <small>22-5-2025</small>
+                </div>
+                <div>
+                  <p class="mb-0 para-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                    <a href="#" class="read-more">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="overflow-hidden">
+                <img
+                  src="./images/article3.png"
+                  class="w-100"
+                  alt="Article Image 3"
+                  style="height: 250px; object-fit: cover"
+                />
+              </div>
+              <div class="p-2 article-card">
+                <div>
+                  <small>22-5-2025</small>
+                </div>
+                <div>
+                  <p class="mb-0 para-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                    <a href="#" class="read-more">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Faq Part -->
+      <section class="faq-section py-5 text-white">
+        <div class="container">
+          <div class="text-center">
+            <h6 class="text-warning">FAQ</h6>
+            <h4 class="fw-bold mb-4">Any questions about GOTREK?</h4>
+            <p class="mb-5">
+              Understand how GOTREK works, change the way of experience your
+              ride forever
+            </p>
+          </div>
+          <div class="row align-items-center g-5">
+            <!-- Left: FAQ Accordion -->
+            <div class="col-lg-6 leftFaq pe-lg-5">
+              <div class="accordion" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div
+                  class="accordion-item bg-transparent border-bottom border-secondary"
+                >
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed bg-transparent text-white shadow-none d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      <!-- Left Icon -->
+                      <span
+                        class="left-icon d-inline-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="./images/dot-icon.png"
+                          alt="dot"
+                          style="width: 18px; height: 18px"
+                        />
+                      </span>
+                      <!-- Question Text -->
+                      <span class="flex-grow-1"
+                        >Do I need a license to ride an EV cycle?</span
+                      >
+                      <!-- Right Icon (+ or ×) -->
+                      <span class="icon-indicator"></span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body text-muted">
+                      No, it's not required for models with max speed under 25
+                      km/h as per local regulations.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                  class="accordion-item bg-transparent border-bottom border-secondary"
+                >
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed bg-transparent text-white shadow-none d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <!-- Left Icon -->
+                      <span
+                        class="left-icon d-inline-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="./images/dot-icon.png"
+                          alt="dot"
+                          style="width: 18px; height: 18px"
+                        />
+                      </span>
+                      How far can the EV cycle go on a full charge?
+                      <span class="icon-indicator ms-auto"></span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body text-muted">
+                      Up to 60-80 km depending on battery and terrain.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                  class="accordion-item bg-transparent border-bottom border-secondary"
+                >
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed bg-transparent text-white shadow-none d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <!-- Left Icon -->
+                      <span
+                        class="left-icon d-inline-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="./images/dot-icon.png"
+                          alt="dot"
+                          style="width: 18px; height: 18px"
+                        />
+                      </span>
+                      How far can the EV cycle go on a full charge?
+                      <span class="icon-indicator ms-auto"></span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body text-muted">
+                      Up to 60-80 km depending on battery and terrain.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                  class="accordion-item bg-transparent border-bottom border-secondary"
+                >
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed bg-transparent text-white shadow-none d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      <!-- Left Icon -->
+                      <span
+                        class="left-icon d-inline-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="./images/dot-icon.png"
+                          alt="dot"
+                          style="width: 18px; height: 18px"
+                        />
+                      </span>
+                      How far can the EV cycle go on a full charge?
+                      <span class="icon-indicator ms-auto"></span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body text-muted">
+                      Up to 60-80 km depending on battery and terrain.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right: Image -->
+            <div class="col-lg-6">
+              <div class="rightCycle">
+                <img
+                  src="./images/rightCycle.png"
+                  alt="Bike FAQ"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Newsletter Column -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Newsletter</h5>
+            <p class="newsletter-text">
+              Signup for our newsletter to stay up to date on
+            </p>
+            <div class="subscribe-wrapper">
+              <input
+                type="email"
+                class="email-input"
+                placeholder="Email Address"
+              />
+              <button class="btn-subscribe">Subscribe</button>
+            </div>
+          </div>
+
+          <!-- Information Column -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Information</h5>
+            <ul>
+              <li>Store Information</li>
+              <li>About Store</li>
+              <li>Latest Products</li>
+              <li>New Discounts</li>
+              <li>Sale Products</li>
+            </ul>
+          </div>
+
+          <!-- Help Column -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Help</h5>
+            <ul>
+              <li>Shipping & Returns</li>
+              <li>Track Order</li>
+              <li>FAQ</li>
+              <li>Products Return</li>
+              <li>Checkout</li>
+            </ul>
+          </div>
+
+          <!-- About Column -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>About</h5>
+            <ul>
+              <li>Articles</li>
+              <li>Stockstts</li>
+              <li>Contact</li>
+              <li>Shop Locator</li>
+            </ul>
+          </div>
+
+          <!-- GOTREK Column -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="gotrek-column">
+              <h5>GOTREK</h5>
+              <p class="footer-about">
+                We create innovative electric cycles that make eco-friendly
+                travel easy, fun, and affordable.
+              </p>
+              <a href="https://www.gotrek.com" class="gotrek-website"
+                >www.gotrek.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <!-- Bottom Links -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-links">
+            <a href="#">Pittway Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Sales and Refunds</a>
+            <a href="#">Legal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS & Popper.js (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

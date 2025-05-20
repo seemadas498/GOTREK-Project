@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Custom Styles */
+:root{
+    --navBg-color:#333333;
+    --item-color:#E0E0E0;
+    --white:#ffff;
+    --dark-orange:#D54217;
+    --back-color:#2F2A26;
+    --green-color:#004820;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--back-color);
+    overflow-x: hidden;
+    /* font-family: "Oswald", sans-serif; */
+}
+main {
+        overflow-x: hidden;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section_padding{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+/*  Navbar  */
+.navbar {
+    background-color:var(--navBg-color);
+    padding: 10px 0;
+}
+.logo{
+    width: 103px;
+    height:72px;
+    margin-right: 145px;
+}
+.nav-item{
+    margin: 0 18px;
+}
+.active{
+    color:var(--white) !important;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: auto;
+    font-family: "Montserrat", sans-serif;
+}
+.nav-link{
+    color: var(--item-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: auto;
+    font-family: "Montserrat", sans-serif;
+}
+.nav-link:hover{
+    color: var(--white);
+}
+
+.search-wrapper {
+    background-color:var(--white);
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    height: 50px;
+    width: 200px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.icon-button {
+    background-color: #4a4a4a;
+    color: #fff;
+    height: 50px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #333;
+}
+.cart-wrapper {
+    position: relative;
+    color:var(--white);
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-cart-shopping{
+    font-size: 35px;
+}
+.cart-badge {
+    position: absolute;
+    top: 4px;
+    right: 25px;
+    background-color:var(--dark-orange);
+    color: #fff;
+    border-radius: 50%;
+    padding: 1px 5px;
+    font-size: 10px;
+}
+/*  Hero Section  */
+ .hero-section{
+    background-image: url('../images/gotrekbanner.png'); 
+    background-size: cover;      
+    background-position: bottom;  
+    background-repeat: no-repeat; 
+    height: 95vh; 
+    padding-top: 100px; 
+    position: relative; 
+    overflow: hidden;   
+ }
+ .bike-image {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  left: 70px;
+  bottom: -269px;
+  z-index: 2;
+}
+.highlight{
+    font-size:50px;
+    line-height:auto ;
+    font-family: "Montserrat", sans-serif;
+    color: var(--dark-orange);
+    font-weight: bold;
+}
+.hero-title{
+    font-size:32px;
+    line-height:auto;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    color: var(--white);
+}
+.hero-subtitle{
+    font-size:40px;
+    line-height:auto;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    color: var(--white);
+}
+.para{
+    font-size:17px;
+    line-height:auto ;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    max-width: 600px;
+    width: 100%;
+}
+.btn-custom{
+    background-color: var(--white);
+    border-radius: 0;
+    color: #000;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+     gap: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    padding: 9px 20px;
+}
+.btn-custom:hover{
+    border-color: var(--white);
+    color: var(--white);
+}
+.btn-custom i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Carousel part */
+#bannerCarousel .carousel-indicators {
+    position: absolute;
+    bottom: 180px; 
+    left: 20%;
+    transform: translateX(-20%);
+    z-index: 2;
+  }
+
+      .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #e3927d;
+        margin: 0 4px;
+        opacity: 1;
+        transition: background-color 0.3s;
+      }
+
+      .carousel-indicators .active {
+        background-color: #ffffff;
+      }
+
+/* Why Part  */
+.why-section {
+      padding: 60px 0;
+}
+
+    .grouped-bike-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .btn-know {
+      background-color: #e54400;
+      border: none;
+      border-radius: 0;
+    }
+
+    .btn-know:hover {
+      background-color: #c23600;
+    }
+
+
+/* Featured Part */
+.feature{
+  background-image: url("../images/featuredbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.collection-card {
+      position: relative;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+    .more {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 0.9rem;
+      color: white;
+      text-decoration: underline;
+    }
+    .view-btn {
+  background-color:var(--dark-orange);
+  color: var(--white);
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px auto 0;
+  display: block;
+  width: 100%;
+  max-width: 200%;
+  border: none;
+  border-radius: 8px;
+}
+
+.view-btn:hover {
+  background-color: var(--navBg-color);
+  color: var(--white);
+}
+
+    .card-short {
+      height: 220px;
+    }
+    .card-tall {
+      height: 460px;
+    }
+
+  /* Miss Out */
+.miss {
+  background-image: url("../images/timebg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 60px 0;
+}
+.miss {
+  padding-bottom: 5px; 
+  margin-bottom: 0; 
+  background-color: var(--dark-orange);
+}
+.left-side {
+  color: white;
+  margin-top: 0;
+  text-align: left;
+}
+.countdown {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.countdown div {
+        text-align: center;
+}
+.countdown small {
+        font-weight: normal;
+        font-size: 0.8rem;
+}
+.btn-look {
+  background: white;
+  color: black;
+  font-weight: 600;
+  padding: 6px 20px;
+  border: none;
+  margin-top: 1rem;
+}
+.btn-look:hover{
+  background-color: var(--navBg-color);
+  color: var(--white);
+}
+.right-side img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Moments Part */
+.testimonial-box {
+  padding-bottom: 40px;
+}
+
+.carousel-dots {
+  bottom: -50px;
+  right: 0;
+  display: flex;
+  gap: 8px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+}
+.arrow-circle {
+  bottom: -63px;
+  right: -70px;
+  padding: 10px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.circle:hover {
+  background: #f0f0f0;
+  transform: scale(1.1);
+}
+/* Footer Part */
+.footer {
+  background-image: url('../images/footer\ \(1\).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding: 40px 0 30px;
+}
+        .footer h5 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        .footer ul li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        .footer-divider {
+            border-top: 1px solid #ddd;
+            margin: 25px 0;
+        }
+        .footer-about {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+       
+        .newsletter-heading {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .newsletter-text {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .subscribe-wrapper {
+            position: relative;
+            width: 250px;
+        }
+        .email-input {
+            width: 100%;
+            padding: 8px 0px 8px 120px;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            color: #2F2A26;
+        }
+        .btn-subscribe {
+            position: absolute;
+            right: 60%;
+            top: 0;
+            height: 100%;
+            background-color: #FF6501;
+            color: #0C0909;
+            padding: 8px 10px;
+            border: none;
+            font-weight: 500;
+            border-radius: 0;
+        }
+          .footer-social {
+  display: flex;
+  justify-content: start; 
+  gap: 15px;
+  margin-top: 10px;
+
+}
+
+.footer-social a {
+ color: #000;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #FF6501;
+}
+        /* Bottom links */
+          .footer-bottom {
+            font-size: 0.85rem;
+            text-align: center;
+        }
+       .footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; 
+}
+        .footer-bottom-links a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .gotrek-website {
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+        }
+
+
+
+
+/* Responsive */
+
+/* Navbar */
+@media (max-width: 320px) {
+  .search-wrapper {
+    width: 160px;
+  }
+
+  .search-input {
+    height: 40px;
+    font-size: 14px;
+    padding-left: 35px !important;
+  }
+
+  .search-icon {
+    font-size: 14px;
+    left: 10px;
+  }
+
+  .icon-button {
+    width: 45px;
+    height: 40px;
+  }
+
+  .icon-button a img {
+    width: 20px;
+    height: auto;
+  }
+
+  .cart-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fa-cart-shopping {
+    font-size: 24px;
+  }
+}
+/* Banner */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding-bottom: 30px;
+  }
+
+  .highlight {
+    font-size: 36px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+  }
+
+  .para {
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  .btn-custom {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .bike-image {
+    position: static;
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight {
+    font-size: 28px;
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .para {
+    font-size: 13px;
+  }
+
+  .btn-custom {
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+}
+/* Featured Part  */
+ @media (max-width: 767.98px) {
+      .card-short,
+      .card-tall {
+        height: 200px;
+      }
+    }
+
+   
+    @media (max-width: 479.98px) {
+      .card-short,
+      .card-tall {
+        height: 180px;
+      }
+    }
+
+   
+    @media (max-width: 575.98px) {
+      .card-short,
+      .card-tall {
+        height: 160px;
+      }
+    }
+
+
+/* Moments Responsive */
+      @media (max-width: 768px) {
+        .testimonial-box {
+          padding: 20px 15px;
+          text-align: center;
+        }
+
+        .testimonial-box .text-warning {
+          justify-content: center;
+          display: flex;
+        }
+
+       .carousel-dots {
+    position: static !important;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+        .arrow-circle {
+          position: static !important;
+    margin: 15px auto 0 auto;
+    display: flex;
+    justify-content: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .testimonial-box p {
+          font-size: 14px;
+        }
+
+        .arrow-circle .circle {
+          width: 35px;
+          height: 35px;
+        }
+
+        .dot {
+          width: 6px;
+          height: 6px;
+        }
+      }
+
+      /* Miss Part Responsive*/
+
+      @media (max-width: 768px) {
+        .miss {
+    padding-bottom: 20px !important;
+    margin-bottom: 0 !important;
+  }
+        .miss .row {
+          flex-direction: column-reverse;
+          text-align: center;
+        }
+
+        .left-side {
+          text-align: center;
+          margin-top: 30px;
+        }
+
+        .countdown {
+          justify-content: center;
+          font-size: 1.2rem;
+        }
+
+        .btn-look {
+          margin: 20px auto 0;
+          display: inline-block;
+        }
+
+        .right-side {
+          padding: 0;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .countdown {
+          font-size: 1rem;
+        }
+
+        .btn-look {
+          font-size: 13px;
+          padding: 0.35rem 1rem;
+        }
+      }
