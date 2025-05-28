@@ -39,10 +39,18 @@ img{
     padding-bottom: 50px;
 }
 
+/* Sticky Header */
+  header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  width: 100%;
+}
 /*  Navbar  */
 .navbar {
     background-color:var(--navBg-color);
     padding: 10px 0;
+    width: 100%;
 }
 .logo{
     width: 103px;
@@ -120,7 +128,7 @@ img{
     padding: 1px 5px;
     font-size: 10px;
 }
-/* Touch Par */
+/* Touch Part */
 .contact-hero {
         position: relative;
         background-color: #2F2A26;
@@ -189,7 +197,7 @@ img{
       margin-bottom: 20px;
     }
     .contact-form-box {
-      background: url('https://images.unsplash.com/photo-1612831455543-83838d0b8367') no-repeat center center;
+      background: url('../images/fbg.png') no-repeat center center;
       background-size: cover;
       padding: 30px;
       border-radius: 10px;
@@ -197,13 +205,14 @@ img{
       margin: 50px auto;
       color: white;
       position: relative;
+    
     }
 
     .contact-form-box::before {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       z-index: 1;
     }
@@ -303,6 +312,120 @@ img{
       height: 100%;
       border: none;
     }
+    /* Footer Part */
+.footer {
+  background-image: url('../images/footer\ \(1\).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding: 40px 0 30px;
+}
+.footer h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.footer ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #000000;
+}
+.footer ul li a {
+  color: #000000; 
+  text-decoration: none; 
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color:var(--white); 
+}
+.footer-about {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #000000;
+}
+.newsletter-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.newsletter-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #000000; 
+}
+.subscribe-wrapper {
+  position: relative;
+  width: 250px;
+}
+.email-input {
+  width: 100%;
+  padding: 8px 0px 8px 120px;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  color: #2F2A26;
+}
+.btn-subscribe {
+  position: absolute;
+  right: 60%;
+  top: 0;
+  height: 100%;
+  background-color: #FF6501;
+  color: #0C0909;
+  padding: 8px 10px;
+  border: none;
+  font-weight: 500;
+  border-radius: 0;
+  cursor: pointer;
+}
+.btn-subscribe:hover {
+  background-color: #e65c00;
+}
+.footer-social {
+  display: flex;
+  justify-content: start; 
+  gap: 15px;
+  margin-top: 10px;
+
+}
+
+.footer-social a {
+ color: #000;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #FF6501;
+}
+/* Bottom links */
+.footer-bottom {
+  font-size: 0.85rem;
+  text-align: center;
+}
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; 
+}
+.footer-bottom-links a {
+  color: #000000;
+  text-decoration: none;
+}
+.footer-bottom-links a:hover{
+  color:var(--white);
+}
+
+
 /* ===================Responsive=======================*/
 /* Navbar */
 @media (max-width: 320px) {

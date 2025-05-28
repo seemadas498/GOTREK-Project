@@ -43,10 +43,18 @@ img{
     padding-bottom: 50px;
 }
 
+/* Sticky Header */
+  header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  width: 100%;
+}
 /*  Navbar  */
 .navbar {
     background-color:var(--navBg-color);
     padding: 10px 0;
+    width: 100%;
 }
 .logo{
     width: 103px;
@@ -54,7 +62,7 @@ img{
     margin-right: 145px;
 }
 .nav-item{
-    margin: 0 18px;
+    margin: 0 15px;
 }
 .active{
     color:var(--white) !important;
@@ -126,23 +134,16 @@ img{
     font-size: 10px;
 }
 /*  Hero Section  */
- .hero-section{
-    background-image: url('../images/gotrekbanner.png'); 
-    background-size: cover;      
-    background-position: bottom;  
-    background-repeat: no-repeat; 
-    height: 95vh; 
-    padding-top: 100px; 
-    position: relative; 
-    overflow: hidden;   
- }
- .bike-image {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  left: 70px;
-  bottom: -269px;
-  z-index: 2;
+.hero-section {
+        background-image: url("../images/bikebanner.png");
+        background-size: cover;
+        background-position: 30% center;
+        background-repeat: no-repeat;
+        height: 86vh;
+        position: relative;
+        overflow-x: visible;
+        overflow-y: hidden;
+        z-index: 1;
 }
 .highlight{
     font-size:50px;
@@ -193,29 +194,165 @@ img{
   font-size: 16px;
   line-height: 1;
 }
+      .bike-banner img {
+        max-width: 100%;
+        height: auto;
+      }
 
-/* Carousel part */
-#bannerCarousel .carousel-indicators {
-    position: absolute;
-    bottom: 180px; 
-    left: 20%;
-    transform: translateX(-20%);
-    z-index: 2;
-  }
+      .swiper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
 
-      .carousel-indicators [data-bs-target] {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #e3927d;
-        margin: 0 4px;
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+/* Custom pagination bullets like image */
+.swiper-pagination {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  gap: 12px;
+  z-index: 10;
+}
+ .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #6e6e6e;
         opacity: 1;
-        transition: background-color 0.3s;
+        border-radius: 50%;
+        border: none;
+        transition: all 0.3s ease;
+      }
+.swiper-pagination-bullet-active {
+        position: relative;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: white;
+        border: 1px solid white;
+        box-sizing: border-box;
+      }
+      .swiper-pagination-bullet-active::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        background: black;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+       .swiper-pagination-bullet-active::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        background: white;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+      }
+.next-btn{
+    position: absolute;
+    top:90%;
+    left: 86%;
+   
+}
+     .hero-section .container {
+        height: 100%;
       }
 
-      .carousel-indicators .active {
-        background-color: #ffffff;
+      .bike-banner img {
+        max-width: 100%;
+        height: auto;
+        display: block;
       }
+
+      
+      .bike-overlay {
+        display: none;
+}
+
+/*  Offer Section  */
+ .offer-box {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        height: 200px;
+        position: relative;
+        color: #000;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        transition: all 0.3s ease;
+        background-color: #f3f3f3;
+      }
+
+      .offer-box {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .offer-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        background-color: #f9f9f9;
+      }
+      .offer-box::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+      }
+
+      .offer-text {
+        position: relative;
+        z-index: 2;
+        max-width: 60%;
+        padding-top: 35px;
+      }
+
+      .offer-box.bike {
+        background-image: url("../images/Group 1707487331.png");
+        background-position: center right;
+      }
+      .offer-heading {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: auto;
+        font-family: "Montserrat", sans-serif;
+      }
+      .offer-box.helmet {
+        background-image: url("../images/helmet.png");
+        background-position: center left;
+        flex-direction: row-reverse;
+      }
+      .offer-box.helmet .offer-text {
+        padding-left: 60px;
+      }
+
+      .offer-box.gloves {
+        background-image: url("../images/glaf.png");
+        background-position: center right;
+      }
+      .btn-view {
+        background-color: #fbfffe;
+        border-radius: 0;
+      }
+
 
 /* Why Part  */
 .why-section {
@@ -228,16 +365,300 @@ img{
     }
 
     .btn-know {
-      background-color: #e54400;
+      background-color:var(--dark-orange);
       border: none;
+      font-weight: bold;
       border-radius: 0;
     }
 
     .btn-know:hover {
-      background-color: #c23600;
+      background-color:var(--dark-orange);
     }
 
+/* Want Part */
+.want{
+    padding: 50px 0;
+    position: relative;
+    background-image: url('../images/wantbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.header-section{
+   text-align: center;
+} 
+ .header-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #333;
+      font-weight: bold;
+    }
+    .header-section .subtitle-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .header-section .subtitle-line {
+      width: 200px;
+      height: 1px;
+      background-color: #000000;
+    }
+    .header-section p {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 0;
+    }
 
+    .bike-item-container {
+      position: relative;
+      margin-bottom: 30px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: all 0.3s ease;
+      opacity: 0.7;
+      transform: scale(0.95);
+    }
+
+    .bike-item-container.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .icon-buttons {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      transform: translateY(-80%);
+      z-index: 10;
+      display: flex;
+      gap: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .bike-item-container.active .icon-buttons {
+      transform: translateY(-80%) scale(1.2);
+    }
+    
+    .icon-buttons button {
+      background-color:#ECEBE9;
+      border: 0;
+      border-radius:none;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .bike-item-container.active .icon-buttons button {
+      width: 38px;
+      height: 38px;
+    }
+    
+    .icon-buttons button:hover {
+      background-color: #eee;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    .icon-buttons button i {
+      color: #555;
+      font-size: 1rem;
+    }
+    
+    .bike-item-container.active .icon-buttons button i {
+      font-size: 1.1rem;
+    }
+
+    .image-section {
+      background-color: #ECEBE9;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 300px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .image-section img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
+    
+    .bike-item-container.active .image-section img {
+      transform: scale(1.05);
+    }
+
+    .order-button-section {
+      padding: 0 10px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .order-button {
+      background-color: #d9534f;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    
+    .bike-item-container.active .order-button {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .order-button:hover {
+      background-color: #c9302c;
+      color: white;
+    }
+
+    .content-section {
+      padding: 0 15px;
+      text-align: center;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .content-section .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .content-section .card-text {
+      font-size: 1rem;
+      color: #666;
+    }
+    .content-section .price {
+      font-size: 1.25rem;
+      color: #d9534f;
+      font-weight: bold;
+    }
+
+    .pagination-dots {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .pagination-dots .dot {
+      height: 10px;
+      width: 10px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .pagination-dots .dot.active {
+      background-color: #333;
+      transform: scale(1.2);
+    }
+
+    /* Custom Arrow Styles */
+    .custom-carousel-arrow {
+      position: absolute;
+      top: 30%;
+      transform: translateY(-30%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+    }
+    
+    .custom-carousel-arrow img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .custom-arrow-left {
+      left: -8px;
+    }
+    
+    .custom-arrow-right {
+      right: -2px;
+    }
+    
+/* Inside Part */
+
+.gotrek-section {
+  position: relative;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.inside-content {
+  max-width: 330px;
+  width: 100%;
+}
+
+.inside-content h3 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  line-height: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.inside-content p {
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.gotrek-img-wrapper {
+  position: relative;
+}
+
+.gotrek-img {
+  width: 100%;
+  height: auto;
+  transform: translateX(-120px);
+}
+
+.gotrek-label {
+  position: absolute;
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 8px;
+  border-radius: 5px;
+  max-width: 130px;
+  line-height: 1.2;
+}
+.label-1 { top: -1%; left: 66%; }
+.label-2 { top: 25%; right: 21%; }
+.label-3 { bottom: 35%; left: -24%; }
+.label-4 { bottom: 39%; right: 5%; }
+.label-5 { bottom: 24%; right: 4%; }
+
+.btn-know {
+  background-color:var(--dark-orange);
+  border: none;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.btn-know:hover {
+  background-color:var(--dark-orange);
+  color: var(--white);
+}
 /* Featured Part */
 .feature{
   background-image: url("../images/featuredbg.png");
@@ -247,27 +668,27 @@ img{
   height: auto;
 }
 .collection-card {
-      position: relative;
-      color: white;
-      background-size: cover;
-      background-position: center;
-      overflow: hidden;
-      border-radius: 8px;
-    }
-    .overlay {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-    }
-    .more {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      font-size: 0.9rem;
-      color: white;
-      text-decoration: underline;
-    }
-    .view-btn {
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.9rem;
+  color: white;
+  text-decoration: underline;
+}
+.view-btn {
   background-color:var(--dark-orange);
   color: var(--white);
   padding: 10px 20px;
@@ -286,12 +707,12 @@ img{
   color: var(--white);
 }
 
-    .card-short {
-      height: 220px;
-    }
-    .card-tall {
-      height: 460px;
-    }
+.card-short {
+  height: 220px;
+}
+.card-tall {
+  height: 460px;
+}
 
   /* Miss Out */
 .miss {
@@ -311,10 +732,25 @@ img{
   color: white;
   margin-top: 0;
   text-align: left;
+  margin-top: -140px;
+}
+.left-side p{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: auto;
+  font-family: "Montserrat", sans-serif;
+}
+.left-side h5{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: auto;
+  font-family: "Montserrat", sans-serif;
+  color:#000000;
 }
 .countdown {
   font-weight: bold;
   font-size: 1.5rem;
+  color:#000000;
 }
 .countdown div {
         text-align: center;
@@ -387,64 +823,75 @@ img{
   box-sizing: border-box;
   padding: 40px 0 30px;
 }
-        .footer h5 {
-            font-weight: 600;
-            margin-bottom: 15px;
-            font-size: 1rem;
-        }
-        .footer ul {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 0;
-        }
-        .footer ul li {
-            margin-bottom: 8px;
-            font-size: 0.9rem;
-        }
-        .footer-divider {
-            border-top: 1px solid #ddd;
-            margin: 25px 0;
-        }
-        .footer-about {
-            font-size: 0.9rem;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-        
-       
-        .newsletter-heading {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .newsletter-text {
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-        .subscribe-wrapper {
-            position: relative;
-            width: 250px;
-        }
-        .email-input {
-            width: 100%;
-            padding: 8px 0px 8px 120px;
-            border: 1px solid #ddd;
-            border-radius: 0;
-            color: #2F2A26;
-        }
-        .btn-subscribe {
-            position: absolute;
-            right: 60%;
-            top: 0;
-            height: 100%;
-            background-color: #FF6501;
-            color: #0C0909;
-            padding: 8px 10px;
-            border: none;
-            font-weight: 500;
-            border-radius: 0;
-        }
-          .footer-social {
+.footer h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.footer ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #000000;
+}
+.footer ul li a {
+  color: #000000; 
+  text-decoration: none; 
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color:var(--white); 
+}
+.footer-about {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #000000;
+}
+.newsletter-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.newsletter-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #000000; 
+}
+.subscribe-wrapper {
+  position: relative;
+  width: 250px;
+}
+.email-input {
+  width: 100%;
+  padding: 8px 0px 8px 120px;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  color: #2F2A26;
+}
+.btn-subscribe {
+  position: absolute;
+  right: 60%;
+  top: 0;
+  height: 100%;
+  background-color: #FF6501;
+  color: #0C0909;
+  padding: 8px 10px;
+  border: none;
+  font-weight: 500;
+  border-radius: 0;
+  cursor: pointer;
+}
+.btn-subscribe:hover {
+  background-color: #e65c00;
+}
+.footer-social {
   display: flex;
   justify-content: start; 
   gap: 15px;
@@ -461,32 +908,28 @@ img{
 .footer-social a:hover {
   color: #FF6501;
 }
-        /* Bottom links */
-          .footer-bottom {
-            font-size: 0.85rem;
-            text-align: center;
-        }
-       .footer-bottom-links {
+/* Bottom links */
+.footer-bottom {
+  font-size: 0.85rem;
+  text-align: center;
+}
+.footer-bottom-links {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center; 
 }
-        .footer-bottom-links a {
-            color: #333;
-            text-decoration: none;
-        }
-        
-        .gotrek-website {
-            font-weight: 500;
-            color: #333;
-            text-decoration: none;
-        }
+.footer-bottom-links a {
+  color: #000000;
+  text-decoration: none;
+}
+.footer-bottom-links a:hover{
+  color:var(--white);
+}
 
 
 
-
-/* Responsive */
+/* ===================================================Responsive================================================ */
 
 /* Navbar */
 @media (max-width: 320px) {
@@ -524,7 +967,100 @@ img{
     font-size: 24px;
   }
 }
+
+
+
 /* Banner */
+
+      @media (max-width: 992px) {
+        /* Navbar adjustments */
+        .logo {
+          margin-right: 80px;
+        }
+        
+        .nav-item {
+          margin: 0 12px;
+        }
+        
+        .nav-link, .active {
+          font-size: 18px;
+        }
+        
+        .search-input {
+          width: 160px;
+          font-size: 14px;
+          padding-left: 35px;
+        }
+        
+        .search-icon {
+          font-size: 14px;
+        }
+        
+        /* Hero section adjustments */
+        .hero-section {
+          height: 80vh;
+        }
+        
+        .highlight {
+          font-size: 42px;
+        }
+        
+        .hero-title {
+          font-size: 28px;
+        }
+        
+        .hero-subtitle {
+          font-size: 32px;
+        }
+        
+        .para {
+          font-size: 16px;
+          max-width: 500px;
+        }
+        
+        .next-btn {
+          left: 85%;
+        }
+        
+        /* Offer cards adjustments */
+        .offer-box {
+          height: 180px;
+          padding: 15px;
+        }
+        
+        .offer-text {
+          padding-top: 25px;
+          max-width: 65%;
+        }
+        
+        .offer-heading {
+          font-size: 18px;
+        }
+        
+        .btn-view {
+          font-size: 13px;
+          padding: 6px 12px;
+        }
+        
+        /* Specific card adjustments */
+        .offer-box.bike {
+          background-size: 45%;
+        }
+        
+        .offer-box.helmet {
+          background-size: 40%;
+        }
+        
+        .offer-box.gloves {
+          background-size: 45%;
+        }
+        
+        .offer-box.helmet .offer-text {
+          padding-left: 40px;
+        }
+      }
+
+
 @media (max-width: 768px) {
   .hero-section {
     height: auto;
@@ -557,15 +1093,98 @@ img{
   .btn-custom {
     padding: 8px 16px;
     font-size: 13px;
+    margin-top: 20px !important;
+  }
+ .bike-banner {
+          margin-top: 20px;
+        }
+ 
+   .swiper-pagination {
+          left: 50px !important;
+        }
+         .next-btn {
+          top: 84%;
+          left: 80%;
+          transform: translateX(-80%);
+        }
+  .offer-box {
+    height: 180px !important; 
+    padding: 15px !important;
+    text-align: center;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    background-position: center !important;
+    background-size: 40% !important; 
   }
 
-  .bike-image {
-    position: static;
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
+  .offer-box .offer-text {
+    padding: 10px !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    padding-top: 20px !important;
+  }
+
+  /* Specific adjustments for each card */
+  .offer-box.bike,
+  .offer-box.helmet,
+  .offer-box.gloves {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  /* Remove specific padding for helmet card */
+  .offer-box.helmet .offer-text {
+    padding-left: 10px !important;
+  }
+
+  /* Make all headings consistent */
+  .offer-heading {
+    font-size: 18px !important;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Make all buttons consistent */
+  .btn-view {
+    font-size: 14px !important;
+    padding: 5px 15px !important;
+    margin-top: 10px !important;
   }
 }
+
+ @media (max-width: 576px) {
+        .hero-title {
+          font-size: 1.6rem;
+          margin-bottom: 0.5rem;
+        }
+        .hero-subtitle {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+        .para {
+          font-size: 0.9rem;
+          margin-bottom: 1rem;
+        }
+        .hero-content {
+          padding-top: 20px;
+        }
+        .bike-banner img {
+          max-width: 100%;
+          height: auto;
+          transform: scale(0.9);
+          transform-origin: center;
+          margin-top: -20px;
+        }
+        .next-btn {
+          display: none !important;
+        }
+        .hero-section {
+          height: auto;
+          min-height: 86vh;
+          padding-bottom: 30px;
+        }
+      }
 
 @media (max-width: 480px) {
   .highlight {
@@ -581,11 +1200,186 @@ img{
     font-size: 13px;
   }
 
+   .bike-banner {
+          width: 90%;
+          margin-top: 10px;
+        }
   .btn-custom {
     font-size: 12px;
     padding: 7px 14px;
   }
+   .swiper-pagination {
+          top: 96% !important;
+          left: 10px !important;
+        }
 }
+ @media (max-width: 320px) {
+        .hero-content {
+          margin-top: 50px;
+        }
+        .bike-banner {
+          width: 85%;
+          margin-top: 5px;
+        }
+        .hero-title {
+          font-size: 1.4rem;
+        }
+        .swiper-pagination {
+          top: 96% !important;
+          left: 10px !important;
+        }
+      }
+
+/* Want Part */
+ @media (max-width: 1200px) {
+      .custom-arrow-left {
+        left: -30px;
+      }
+      .custom-arrow-right {
+        right: -30px;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .custom-arrow-left {
+        left: -20px;
+      }
+      .custom-arrow-right {
+        right: -20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-section h2 {
+        font-size: 2rem;
+      }
+      .header-section p {
+        font-size: 1rem;
+      }
+      .image-section {
+        min-height: 250px;
+      }
+      .icon-buttons {
+        right: 10px;
+      }
+      .header-section .subtitle-container {
+        gap: 10px;
+      }
+      .header-section .subtitle-line {
+        width: 60px;
+      }
+      
+      .custom-carousel-arrow {
+        width: 30px;
+        height: 30px;
+      }
+      
+      .custom-arrow-left {
+        left: -15px;
+      }
+      
+      .custom-arrow-right {
+        right: -15px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .image-section {
+        min-height: 200px;
+      }
+      .header-section {
+        padding: 20px 0;
+      }
+      .order-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+      .icon-buttons {
+        right: 5px;
+      }
+      .header-section .subtitle-container {
+        flex-direction: column;
+        gap: 5px;
+      }
+      .header-section .subtitle-line {
+        width: 50%;
+        max-width: 150px;
+      }
+      
+      .bike-item-container {
+        opacity: 1;
+        transform: scale(1);
+      }
+      
+      .custom-carousel-arrow {
+        display: none !important;
+      }
+    }
+/* Inside Part  */
+
+@media (max-width: 768px) {
+  .gotrek-img {
+    transform: translateX(0px); 
+  }
+  .gotrek-label {
+    font-size: 0.65rem;
+    max-width: 100px;
+  }
+  .label-1 { left: 81%; top: -2%; }
+  .label-2 { right: -1%; top: 21%; }
+  .label-3 { left: -9%; bottom: 30%; }
+  .label-4 { right: -8%; bottom: 36%; }
+  .label-5 { right: -8%; bottom: 16%; }
+}
+
+/* <= 576px */
+@media (max-width: 576px) {
+  .gotrek-img {
+    transform: translateX(-4px);
+  }
+  .gotrek-label {
+    font-size: 0.6rem;
+    max-width: 90px;
+  }
+  .label-1 { left: 81%; top: -2%; }
+  .label-2 { right: 3%; top: 22%; }
+  .label-3 { left: -4%; bottom: 32%; }
+  .label-4 { right: -4%; bottom: 38%; }
+  .label-5 { right: -6%; bottom: 18%; }
+}
+
+/* <= 480px */
+@media (max-width: 480px) {
+  .gotrek-img {
+    transform: translateX(-5px);
+  }
+  .gotrek-label {
+    font-size: 0.55rem;
+    max-width: 80px;
+  }
+  .label-1 { left: 81%; top: -2%; }
+  .label-2 { right: 0%; top: 22%; }
+  .label-3 { left: -3%; bottom: 30%; }
+  .label-4 { right: -2%; bottom: 37%; }
+  .label-5 { right: -3%; bottom: 17%; }
+}
+
+/* <= 320px */
+@media (max-width: 320px) {
+  .gotrek-img {
+    transform: translateX(0);
+  }
+  .gotrek-label {
+    font-size: 0.5rem;
+    max-width: 70px;
+  }
+  .label-1 { left: 80%; top: -5%; }
+  .label-2 { right: -5%; top: 19%; }
+  .label-3 { left: -5%; bottom: 28%; }
+  .label-4 { right: -4%; bottom: 32%; }
+  .label-5 { right: -3%; bottom: 15%; }
+}
+
 /* Featured Part  */
  @media (max-width: 767.98px) {
       .card-short,

@@ -50,15 +50,15 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="./check.html">Check Out</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
             </ul>
             <div class="d-flex align-items-center ms-4">
               <!-- Search Input with Icon -->
@@ -372,7 +372,7 @@
                     aria-labelledby="headingOne"
                     data-bs-parent="#faqAccordion"
                   >
-                    <div class="accordion-body text-muted">
+                    <div class="accordion-body text-white">
                       No, it's not required for models with max speed under 25
                       km/h as per local regulations.
                     </div>
@@ -412,7 +412,7 @@
                     aria-labelledby="headingTwo"
                     data-bs-parent="#faqAccordion"
                   >
-                    <div class="accordion-body text-muted">
+                    <div class="accordion-body text-white">
                       Up to 60-80 km depending on battery and terrain.
                     </div>
                   </div>
@@ -451,7 +451,7 @@
                     aria-labelledby="headingThree"
                     data-bs-parent="#faqAccordion"
                   >
-                    <div class="accordion-body text-muted">
+                    <div class="accordion-body text-white">
                       Up to 60-80 km depending on battery and terrain.
                     </div>
                   </div>
@@ -490,7 +490,7 @@
                     aria-labelledby="headingFour"
                     data-bs-parent="#faqAccordion"
                   >
-                    <div class="accordion-body text-muted">
+                    <div class="accordion-body text-white">
                       Up to 60-80 km depending on battery and terrain.
                     </div>
                   </div>
@@ -512,22 +512,29 @@
       </section>
     </main>
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer py-5">
       <div class="container">
         <div class="row">
           <!-- Newsletter Column -->
           <div class="col-lg-3 col-md-6 mb-4">
-            <h5>Newsletter</h5>
+            <h5 class="fw-bold">Newsletter</h5>
             <p class="newsletter-text">
               Signup for our newsletter to stay up to date on
             </p>
             <div class="subscribe-wrapper">
+              <a class="btn-subscribe">Subscribe</a>
               <input
                 type="email"
                 class="email-input"
                 placeholder="Email Address"
               />
-              <button class="btn-subscribe">Subscribe</button>
+            </div>
+            <!-- Social icon -->
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
 
@@ -535,11 +542,11 @@
           <div class="col-lg-2 col-md-6 mb-4">
             <h5>Information</h5>
             <ul>
-              <li>Store Information</li>
-              <li>About Store</li>
-              <li>Latest Products</li>
-              <li>New Discounts</li>
-              <li>Sale Products</li>
+              <li><a href="#">Store Information</a></li>
+              <li><a href="#">About Store</a></li>
+              <li><a href="#">Latest Products</a></li>
+              <li><a href="#">New Discounts</a></li>
+              <li><a href="#">Sale Products</a></li>
             </ul>
           </div>
 
@@ -547,11 +554,11 @@
           <div class="col-lg-2 col-md-6 mb-4">
             <h5>Help</h5>
             <ul>
-              <li>Shipping & Returns</li>
-              <li>Track Order</li>
-              <li>FAQ</li>
-              <li>Products Return</li>
-              <li>Checkout</li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Products Return</a></li>
+              <li><a href="#">Checkout</a></li>
             </ul>
           </div>
 
@@ -559,32 +566,26 @@
           <div class="col-lg-2 col-md-6 mb-4">
             <h5>About</h5>
             <ul>
-              <li>Articles</li>
-              <li>Stockstts</li>
-              <li>Contact</li>
-              <li>Shop Locator</li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Stockstts</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Shop Locator</a></li>
             </ul>
           </div>
 
           <!-- GOTREK Column -->
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="gotrek-column">
-              <h5>GOTREK</h5>
+              <h5 class="fw-bold">GOTREK</h5>
               <p class="footer-about">
                 We create innovative electric cycles that make eco-friendly
                 travel easy, fun, and affordable.
               </p>
-              <a href="https://www.gotrek.com" class="gotrek-website"
-                >www.gotrek.com</a
-              >
             </div>
           </div>
         </div>
-
-        <div class="footer-divider"></div>
-
         <!-- Bottom Links -->
-        <div class="footer-bottom">
+        <div class="footer-bottom mt-4 text-center">
           <div class="footer-bottom-links">
             <a href="#">Pittway Policy</a>
             <a href="#">Terms of Use</a>
