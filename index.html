@@ -41,13 +41,17 @@
               ><img src="./images/logo (4).png" alt="Logo"
             /></a>
           </div>
+          <!-- Hamburger toggler visible below lg (992px) -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler text-white border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars" style="font-size: 1.5rem; color: white"></i>
           </button>
           <div
             class="collapse navbar-collapse justify-content-center ms-lg-7"
@@ -63,7 +67,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="./check.html">Check Out</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
             </ul>
             <div class="d-flex align-items-center ms-4">
               <!-- Search Input with Icon -->
@@ -476,7 +482,7 @@
             <div class="col-md-4 col-12">
               <div
                 class="collection-card card-tall"
-                style="background-image: url('./images/feature1.png')"
+                style="background-image: url('./images/fech.png')"
               >
                 <div class="overlay">
                   <h6>2025</h6>
@@ -511,6 +517,7 @@
                       <h6>New 2025</h6>
                       <p class="mb-0">Trek Collection</p>
                     </div>
+                    <div class="more">More ></div>
                   </div>
                 </div>
 
@@ -536,6 +543,7 @@
                       <h6>GOTREK</h6>
                       <p class="mb-0">Signature Ride</p>
                     </div>
+                    <div class="more">More ></div>
                   </div>
                 </div>
               </div>

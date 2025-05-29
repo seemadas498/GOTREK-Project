@@ -159,7 +159,7 @@ img{
   color:var(--white); 
   text-align: center;
 }
-   .about-overlay h1 {
+   .about-overlay h2 {
   font-size: 220px;
   font-weight: 600;
   color: white;
@@ -231,6 +231,9 @@ img{
 .box-shadow{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+.feature:hover{
+ transform: translateY(-15px);
+}
 
 /* OUR GALLAR */
 .gallery-section{
@@ -249,6 +252,9 @@ img{
   object-fit: cover;
   height: 100%;
 }
+.gal:hover{
+   transform: scale(1.05);
+}
 .small-img{
   border-left: 4px solid white;
   border-right: 4px solid white;
@@ -263,7 +269,7 @@ img{
   line-height: 1.1;
   z-index: 2;
 }
-/*  */
+/* Article */
 .article{
   background-color: var(--dark-orange);
 }
@@ -295,6 +301,7 @@ img{
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px); 
 }
+
 /* Faq Part */
 .faq-section{
   background-image: url('../images/faq.png');
@@ -307,36 +314,37 @@ img{
 .leftFaq{
   margin-top: -90px;
 }
- .accordion-button::after {
-        display: none !important; 
+.accordion-button::after {
+        display: none !important;
 }
 
-      .left-icon {
-        width: 24px;
-        height: 24px;
-      }
+.left-icon {
+    width: 24px;
+    height: 24px;
+}
 
-      .icon-indicator::before {
-        content: "+";
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #fff;
-        transition: all 0.3s ease;
-      }
+.icon-indicator::before {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease;
+}
 
-      .accordion-button:not(.collapsed) .icon-indicator::before {
-        content: "×";
-        color: #ff6600;
-      }
+.accordion-button:not(.collapsed) .icon-indicator::before {
+    content: "×";
+    color: #ff6600;
+}
 .rightCycle{
   max-width: 480px;
   min-height:480px;
 }
 
+
  
 /* Footer Part */
 .footer {
-  background-image: url('../images/footer\ \(1\).png');
+  background-image: url('../images/footer (1).png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -360,13 +368,13 @@ img{
   color: #000000;
 }
 .footer ul li a {
-  color: #000000; 
-  text-decoration: none; 
+  color: #000000;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer ul li a:hover {
-  color:var(--white); 
+  color:var(--white);
 }
 .footer-about {
   font-size: 0.9rem;
@@ -382,7 +390,7 @@ img{
 .newsletter-text {
   font-size: 14px;
   margin-bottom: 15px;
-  color: #000000; 
+  color: #000000;
 }
 .subscribe-wrapper {
   position: relative;
@@ -413,7 +421,7 @@ img{
 }
 .footer-social {
   display: flex;
-  justify-content: start; 
+  justify-content: start;
   gap: 15px;
   margin-top: 10px;
 
@@ -437,7 +445,7 @@ img{
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  justify-content: center; 
+  justify-content: center;
 }
 .footer-bottom-links a {
   color: #000000;
@@ -446,10 +454,9 @@ img{
 .footer-bottom-links a:hover{
   color:var(--white);
 }
-
-
         
-        /* Responsive adjustments */
+/* Responsive  */
+ 
         @media (max-width: 767.98px) {
             .subscribe-wrapper {
                 width: 100%;
@@ -593,4 +600,340 @@ img{
   .fa-cart-shopping {
     font-size: 24px;
   }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        justify-content: flex-start !important;
+    }
+
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .nav-link {
+        font-size: 18px; 
+    }
+
+    /* FAQ Section adjustments */
+    .leftFaq {
+        margin-top: 20px; 
+    }
+
+    .rightCycle {
+        max-width: 100%; 
+        min-height: auto; 
+        margin-top: 30px; 
+    }
+
+    /* Footer adjustments */
+    .footer .row > div {
+        margin-bottom: 30px; 
+    }
+
+    .subscribe-wrapper {
+        width: 100%; 
+    }
+
+    .btn-subscribe {
+        right: auto; 
+        left: 0; 
+        width: 100px; 
+        border-radius: 0;
+    }
+
+    .email-input {
+        padding: 8px 10px 8px 110px; 
+    }
+
+    .footer-social {
+        justify-content: center; 
+    }
+
+    .footer-bottom-links {
+        flex-direction: column; 
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .navbar {
+        padding: 8px 0;
+    }
+
+    .logo {
+        width: 90px;
+        height: auto;
+    }
+
+    .nav-link, .active {
+        font-size: 18px;
+    }
+
+    .search-wrapper {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .search-input {
+        width: 100%;
+        padding-left: 45px; 
+    }
+
+    .search-icon {
+        left: 15px;
+    }
+
+    .icon-button {
+        width: 50px;
+        height: 45px;
+    }
+
+    .cart-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .fa-cart-shopping {
+        font-size: 30px;
+    }
+
+    /* FAQ section */
+    .faq-section {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .faq-section h4 {
+        font-size: 28px; 
+    }
+
+    .faq-section p {
+        font-size: 15px;
+    }
+
+    .accordion-button {
+        font-size: 16px; 
+    }
+
+    .accordion-body {
+        font-size: 14px; 
+    }
+
+    .rightCycle {
+        margin-top: 20px;
+    }
+
+    /* Footer */
+    .footer h5 {
+        font-size: 1.3rem;
+    }
+
+    .email-input {
+        padding: 8px 10px 8px 90px; 
+    }
+    .btn-subscribe {
+        width: 80px; 
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        width: 70px;
+    }
+    .nav-link, .active {
+        font-size: 16px;
+    }
+
+    .search-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .search-input {
+        height: 45px;
+        font-size: 14px;
+        padding-left: 40px;
+    }
+
+    .search-icon {
+        left: 12px;
+    }
+
+    .icon-button {
+        height: 45px;
+        width: 45px;
+    }
+
+    .fa-cart-shopping {
+        font-size: 28px;
+    }
+
+    .cart-badge {
+        right: 20px;
+        font-size: 9px;
+    }
+
+    /* FAQ Section */
+    .faq-section h4 {
+        font-size: 24px;
+    }
+
+    .faq-section p {
+        font-size: 14px;
+    }
+
+    .accordion-button {
+        font-size: 15px;
+    }
+
+    .accordion-body {
+        font-size: 13px;
+    }
+
+    /* Footer */
+    .footer h5 {
+        font-size: 1.2rem;
+        text-align: center; 
+    }
+    .footer ul {
+        text-align: center; 
+    }
+    .footer-about {
+        text-align: center; 
+    }
+    .newsletter-text {
+        text-align: center;
+    }
+    .subscribe-wrapper {
+        margin: 0 auto 20px; 
+        width: 100%;
+        max-width: 280px; 
+    }
+    .btn-subscribe {
+        width: 70px;
+        font-size: 13px;
+        right: auto;
+        left: 0;
+        padding: 8px 5px;
+    }
+    .email-input {
+        padding: 8px 10px 8px 80px;
+    }
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar-brand img {
+        width: 60px;
+    }
+    .nav-link {
+        font-size: 15px;
+    }
+    .search-input {
+        padding-left: 35px;
+        font-size: 13px;
+    }
+    .search-icon {
+        left: 8px;
+        font-size: 13px;
+    }
+    .icon-button {
+        width: 40px;
+        height: 40px;
+    }
+    .fa-cart-shopping {
+        font-size: 25px;
+    }
+    .cart-badge {
+        right: 18px;
+        top: 2px;
+        font-size: 8px;
+    }
+    .faq-section h4 {
+        font-size: 20px;
+    }
+    .faq-section p {
+        font-size: 13px;
+    }
+    .accordion-button {
+        font-size: 14px;
+    }
+    .accordion-body {
+        font-size: 12px;
+    }
+    .email-input {
+        padding: 8px 5px 8px 70px;
+    }
+    .btn-subscribe {
+        width: 60px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo {
+        width: 60px;
+    }
+    .nav-link, .active {
+        font-size: 14px;
+    }
+    .search-input {
+        width: 100%;
+        padding-left: 30px !important;
+        height: 35px;
+    }
+    .search-icon {
+        left: 5px;
+    }
+    .icon-button {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 15px;
+    }
+    .fa-cart-shopping {
+        font-size: 22px;
+    }
+    .cart-wrapper {
+        width: 35px;
+        height: 35px;
+    }
+    .cart-badge {
+        right: 15px;
+        top: 0px;
+        font-size: 7px;
+    }
+    .faq-section h4 {
+        font-size: 18px;
+    }
+    .faq-section p {
+        font-size: 12px;
+    }
+    .accordion-button {
+        font-size: 13px;
+    }
+    .accordion-body {
+        font-size: 11px;
+    }
+    .email-input {
+        padding: 6px 5px 6px 60px;
+        font-size: 12px;
+    }
+    .btn-subscribe {
+        width: 60px;
+        font-size: 10px;
+        padding: 6px 5px;
+    }
+    .footer h5 {
+        font-size: 1.1rem;
+    }
+    .footer ul li, .footer-about, .newsletter-text {
+        font-size: 0.8rem;
+    }
+    .footer-social a {
+        font-size: 18px;
+    }
 }

@@ -686,12 +686,12 @@ img{
   right: 10px;
   font-size: 0.9rem;
   color: white;
-  text-decoration: underline;
+  cursor: pointer;
 }
 .view-btn {
   background-color:var(--dark-orange);
   color: var(--white);
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-align: center;
   font-weight: bold;
   margin: 20px auto 0;

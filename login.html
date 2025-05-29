@@ -4,45 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- title -->
     <title>Login</title>
 
-    <!-- font cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <!-- bootstrap icon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
 
-    <!-- bootstrap css -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
 
-    <!-- css -->
     <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
     <div class="container-fluid">
       <div class="row min-vh-100">
-        <!-- Left Side Image -->
         <div class="col-md-6 left-image p-0"></div>
 
-        <!-- Right Side Login Form -->
-        <div
-          class="col-md-6 d-flex align-items-center justify-content-center"
-        >
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
           <div class="form-section w-100" style="max-width: 400px">
             <h3 class="mb-2 fw-bold text-center">Login</h3>
             <p class="text-center sub-heading mb-4">
               Lorem ipsum dolor sit amet consectetur volutpat eu.
             </p>
 
-            <form>
-              <!-- Email -->
+            <form id="loginForm">
               <div class="mb-3">
                 <label for="email" class="form-label">Email Address</label>
                 <input
@@ -51,9 +41,9 @@
                   id="email"
                   placeholder="Enter Email Address"
                 />
+                <div class="error-message" id="emailError"></div>
               </div>
 
-              <!-- Password -->
               <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
                 <div class="input-group">
@@ -64,14 +54,18 @@
                     placeholder="********"
                   />
                   <span class="input-group-text bg-white border-0">
-                    <i class="fa-regular fa-eye" style="cursor: pointer"></i>
+                    <i
+                      class="fa-regular fa-eye"
+                      id="togglePassword"
+                      style="cursor: pointer"
+                    ></i>
                   </span>
                 </div>
+                <div class="error-message" id="passwordError"></div>
               </div>
 
-              <!-- Remember Me + Forgot -->
               <div class="d-flex justify-content-between align-items-center mb-4">
-                <div class="form-check remember-me custom-checkbox ">
+                <div class="form-check remember-me custom-checkbox">
                   <input
                     class="form-check-input"
                     type="checkbox"
@@ -86,15 +80,13 @@
                 </div>
               </div>
 
-              <!-- Login Button -->
               <div class="mb-3 text-center">
-                <a href="login.html" class="login-btn" type="button">Login</a>
+                <button type="submit" class="login-btn">Login</button>
               </div>
 
-              <!-- Footer Links -->
               <div class="text-center login-links">
                 Don’t have an account?
-                <a href="#">Sign Up</a>
+                <a href="./signUp.html">Sign Up</a>
               </div>
             </form>
           </div>
@@ -102,7 +94,9 @@
       </div>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
